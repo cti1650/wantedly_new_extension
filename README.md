@@ -1,0 +1,1 @@
+# wantedly_new_extension
