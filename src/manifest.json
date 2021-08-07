@@ -1,14 +1,18 @@
 {
   "manifest_version": 2,
   "name": "Wantedly New Projects",
-  "version": "0.0.7",
+  "version": "0.0.15",
   "description": "Wantedlyのソートを自動的に新着順にします！",
   "icons": {},
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
   "content_scripts": [
     {
       "matches": ["https://www.wantedly.com/*"],
       "js": ["content.js"]
     }
   ],
-  "permissions": ["activeTab", "contextMenus"]
+  "permissions": ["tabs", "activeTab", "contextMenus"]
 }
